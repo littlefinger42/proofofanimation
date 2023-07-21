@@ -29,7 +29,9 @@ export default function AnimationPage({
         {isTherePreviousAnimation && (
           <Button href={`/animationexamples/${slugAsInt - 1}`}>Previous</Button>
         )}
-        <Button href="/">Back to home</Button>
+        <Button href="/" block>
+          Back to home
+        </Button>
       </main>
     </PageWrapper>
   );
