@@ -1,4 +1,4 @@
-import { AnimationOne } from "../../../components/animationone/AnimationOne";
+import { DragPanel } from "../../../components/draganimation/DragPanel";
 
 interface AnimationType {
   id: number;
@@ -8,16 +8,16 @@ interface AnimationType {
 const animations: AnimationType[] = [
   {
     id: 0,
-    AnimationComponent: AnimationOne,
+    AnimationComponent: DragPanel,
   },
-  {
-    id: 1,
-    AnimationComponent: AnimationOne,
-  },
-  {
-    id: 2,
-    AnimationComponent: AnimationOne,
-  },
+  // {
+  //   id: 1,
+  //   AnimationComponent: TODO,
+  // },
+  // {
+  //   id: 2,
+  //   AnimationComponent: TODO,
+  // },
 ];
 
 export { animations };
