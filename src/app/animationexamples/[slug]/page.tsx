@@ -1,4 +1,5 @@
 import { PageWrapper } from "../../page-wrapper";
+import { animations } from "./animations";
 
 export default function AnimationPage({
   params,
@@ -6,9 +7,17 @@ export default function AnimationPage({
   params: { slug: string };
 }) {
   const { slug } = params;
+  const { AnimationComponent } = animations[parseInt(slug)];
   return (
     <PageWrapper>
-      <main>{slug}</main>
+      <main>
+        {slug}{" "}
+        {AnimationComponent ? (
+          <AnimationComponent />
+        ) : (
+          <p>No component found</p>
+        )}
+      </main>
     </PageWrapper>
   );
 }
