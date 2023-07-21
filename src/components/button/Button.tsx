@@ -9,14 +9,9 @@ export const Button: React.FC<ButtonProps> = ({ href = "", children }) => {
   return (
     <Link
       href={href}
-      className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+      className="inline-flex items-center px-4 py-2 mr-2 bg-blue-500 hover:bg-blue-300 text-white text-sm rounded-md"
     >
-      <h2 className="text-2xl font-semibold">
-        {children}
-        <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-          -&gt;
-        </span>
-      </h2>
+      <h2 className="text-xl">{children}</h2>
     </Link>
   );
 };
